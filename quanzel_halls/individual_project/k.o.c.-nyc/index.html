@@ -2,6 +2,12 @@
 <html>
 <head>
 	<title>K.O.C.-NYC</title>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<style>
 		/*nav {
 			padding-bottom: 0px;
@@ -36,6 +42,38 @@
 			color: orange;
 			min-width: 100%;
 			font-size: 30px;
+		}
+		/* Dropdown Button */
+		.dropbtn {
+		    background-color: orange;
+		    color: white;
+		    padding: 16px;
+		    font-size: 16px;
+		    border: none;
+		    cursor: pointer;
+		}
+		/* The container <div> - needed to position the dropdown content */
+		.dropdown {
+		    position: relative;
+		   /*display: inline-block;*/
+		}
+		/* Dropdown Content (Hidden by Default) */
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: lightblue;
+		    min-width: 160px;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+		/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content {
+		    display: block;
+		}
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {background-color: orange}
+		/* Change the background color of the dropdown button when the dropdown content is shown */
+		.dropdown:hover .dropbtn {
+		    background-color: lightblue;
 		}
 		/*.navbar-inverse {
 
@@ -93,12 +131,11 @@
 		padding-bottom: 0px;
 		text-align: center;
 		}
+		.checkbox {
+			color: orange;
+		}
 	</style>
-					<!-- Latest compiled and minified CSS -->
-					<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-					<!-- Optional theme -->
-					<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+					
 </head>
 <body bgcolor="#ff9933">
 		<div class="wrapper">
@@ -115,8 +152,19 @@
 	  			<left><li role="presentation" class="backcourt"><a href="index.html">K.O.C.</a></li></left>
 				<right><li role="presentation" class="backcourt2"><a href="#">My Account</a></li></right>
 	  			<right><li role="presentation" class="backcourt2"><a href="#">Log Out</a></li></right>
-	  		</nav>-->
-  		
+	  			</nav>-->
+	<div class="dropdown">
+  			<button class="dropbtn">Courts</button>
+  		<div class="dropdown-content">
+   				 <a href="#">Dyckman</a>
+   				 <a href="#">Kingdome</a>
+   				 <a href="#">Rucker</a>
+  		</div>
+	</div>		
+  		<br>
+  		<br>
+  		<br>
+  		<br>
 		<CENTER><h1 style="font-family: serif;">King of Courts- N.Y.C.</h1></CENTER>
 		<br>
 		<br>
@@ -161,5 +209,10 @@
   		<li role="presentation" class="status"><a href="#">Donations</a><right></li>
   	</nav>
   	</div>
+
+  	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="
+	sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 </html>
