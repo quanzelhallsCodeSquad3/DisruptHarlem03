@@ -55,14 +55,14 @@
 		/* The container <div> - needed to position the dropdown content */
 		.dropdown {
 		    position: relative;
-		   /*display: inline-block;*/
+		   display: inline-block;
 		}
 		/* Dropdown Content (Hidden by Default) */
 		.dropdown-content {
 		    display: none;
 		    position: absolute;
 		    background-color: lightblue;
-		    min-width: 160px;
+		    /*min-width: 160px;*/
 		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		}
 		/* Show the dropdown menu on hover */
@@ -91,6 +91,7 @@
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
 		  background-size: cover;
+		  background-image: transparent !important;
 		}	
 		h1 {
 			font-size: 250px !important; 
@@ -156,16 +157,30 @@
 	<div class="dropdown">
   			<button class="dropbtn">Courts</button>
   		<div class="dropdown-content">
-   				 <a href="#">Dyckman</a>
-   				 <a href="#">Kingdome</a>
-   				 <a href="#">Rucker</a>
+   				 <li><a href="#">Dyckman</a></li>
+   				 <li><a href="#">Kingdome</a></li>
+   				 <li><a href="#">Rucker</a></li>
   		</div>
-	</div>		
-  		<br>
-  		<br>
-  		<br>
-  		<br>
-		<CENTER><h1 style="font-family: serif;">King of Courts- N.Y.C.</h1></CENTER>
+	</div>
+	<br />
+
+	<div class="dropdown">
+  			<ul>
+  				<li><a href="#">About K.O.C.- NYC</a></li>
+  				<li class="dropdown">
+  					<button class="dropbtn"><a href="">Courts</a></button>
+  						<ul class="dropdownmenu">
+  							<li><a href="#">Dyckman</a></li>
+			   				 <li><a href="#">Kingdome</a></li>
+			   				 <li><a href="#">Rucker</a></li>
+  						</ul>
+  				</li>
+  				<li><a href="#">Developers</a></li>
+  				<li><a href="#">Privacy</a></li>
+  			</ul>
+	</div>
+  		<CENTER><img src="images/koc.jpg"></CENTER>
+		/*<CENTER><h1 style="font-family: serif;">King of Courts- N.Y.C.</h1></CENTER>*/
 		<br>
 		<br>
 		<br>
