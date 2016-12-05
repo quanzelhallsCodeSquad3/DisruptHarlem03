@@ -3,11 +3,11 @@
 <head>
 	<title>K.O.C.-NYC/Dyckman</title>
 	
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<style>
 		body { 
@@ -17,75 +17,25 @@
 		  -o-background-size: cover;
 		  background-size: cover;
 		}	
-		.backcourt {
-			display: inline-block;
-			text-decoration: none;
-			text-align:left;
-			padding-top: 20px;
-			padding-left: 20px;
-			padding-right: 0px;
-			padding-bottom: 0px;
-			color: orange;
-			min-width: 100%;
-			font-size: 40px;
-		}
-		.backcourt2 {
-			display: inline-block;
-			text-decoration: none;
-			text-align:right;
-			padding-left: 0px;
-			padding-right: 20px;
-			padding-bottom: 0px;
-			color: orange;
-			min-width: 100%;
-			font-size: 30px;
-		}
-		.status {
-		display: inline;
-		padding: 70px; 
-		padding-bottom: 0px;
-		}
-		/* Dropdown Button */
-		.dropbtn {
-		    background-color: orange;
-		    color: white;
-		    padding: 16px;
-		    font-size: 16px;
-		    border: none;
-		    cursor: pointer;
-		}
-		/* The container <div> - needed to position the dropdown content */
-		.dropdown {
-		    position: relative;
-		   /*display: inline-block;*/
-		}
-		/* Dropdown Content (Hidden by Default) */
-		.dropdown-content {
-		    display: none;
-		    position: absolute;
-		    background-color: lightblue;
-		    min-width: 160px;
-		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		}
-		/* Show the dropdown menu on hover */
-		.dropdown:hover .dropdown-content {
-		    display: block;
-		}
-		/* Change color of dropdown links on hover */
-		.dropdown-content a:hover {background-color: orange}
-		/* Change the background color of the dropdown button when the dropdown content is shown */
-		.dropdown:hover .dropbtn {
-		    background-color: lightblue;
-		}
-		/*.wrapper {
-		min-height: 100%;
-		height: 100%;
-		margin: 0 auto -4em;
-		}*/
-		h1 {
-			font-size: 100px !important; 
-			color: orange !important;
-		}
+	navbar-inverse {
+      color: orange;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+      color: orange;
+    }
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+      color: orange;
+    }
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+      border-color: orange;
+      background-color: black;
+    }
+    .navbar-inverse .navbar-brand {
+      color: orange;
+    }
+    a {
+      color: orange;
+    }
 		h2 {
 			font-size: 40px !important;
 			color: orange !important; 
@@ -96,71 +46,75 @@
 		p,
 		td, 
 		th	{
+			font-size: 20px;
 			color: orange;
 		}
-
+		.container {
+			background-color: black;
+		}
+		.status {
+		display: inline;
+		padding: 70px; 
+		padding-bottom: 0px;
+		}
+		.footer {
+		height: 4em;
+	    list-style-type: none;
+	    display: inline;
+	    margin: 0;
+	    padding: 00;
+	    margin-top: 80px;
+		}
 	</style>
 </head>
 <body>
-	<div class="wrapper">
-		<div class="backcourt">
-			<p>KOC</p>
-		</div>
-		<div class="backcourt2">
-			<ul>
-				<li>My Account</li>
-				<li>Log Out</li>
-			</ul>
-		</div>	
-	<div class="dropdown">
-  			<button class="dropbtn">Courts</button>
-  		<div class="dropdown-content">
-   				 <a href="#">Dyckman</a>
-   				 <a href="#">Kingdome</a>
-   				 <a href="#">Rucker</a>
-  		</div>
-	</div>	
-		<CENTER><h1 style="font-family: serif;">King of Courts- N.Y.C.</h1></CENTER>
+		<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><b>KOC</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html"><b>Home</b></a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Courts </b><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="dyckman.html">Dyckman</a></li>
+            <li><a href="kingdome.html">Kingdome</a></li>
+            <li><a href="rucker.html">Rucker Park</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>About K.O.C.-NYC </b><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><b>Contact Us</b></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span><b> Sign Up</b></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span><b> Login</b></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  		<br>
+  		<br>
+  		<br>
+  		<CENTER><img src="images/koc.jpg" style="width: 350px; height: 350px;"></CENTER>
 		<br>
 		<br>
 		<br>
 		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<div class="col-md-4">
-			<div class="thumbnail">
-	        	<a href="index.html" target="_blank">
-		          	<img src="images/kd_beasley.jpg" alt="Kevin Durant vs. Micheal Beasley" style="width:550px;height:250px;">
-		          	<div class="caption">
-		           		<Center><p>KD vs. Micheal Beasley</p></Center>
-		          	</div>
-		        </a>
-		    </div>
-		</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-	<div class="container">
+			<div class="container">
   		<center><h2>King of Dyckman</h2></center>
  				 <p>Dyckman Stats:</p>            
   		<table class="table table-stripped">
@@ -182,25 +136,25 @@
 		        <td>156</td>
 		      </tr>
 		      <tr>
-		      	<td>Makonnen J</td>
-		        <td>makonnenj</td>
+		      	<td>Quanzel H</td>
+		        <td>courtmast3rQ</td>
 		        <td>#2</td>
-		        <td>#2</td>
-		        <td>174</td>
+		        <td>#1</td>
+		        <td>187</td>
 		      </tr>
 		      <tr>
 		      	<td>Daryl H</td>
 		        <td>darylh</td>
 		        <td>#3</td>
-		        <td>#1</td>
-		        <td>187</td>
-		      </tr>
-		       <tr>
-		      	<td>Quanzel H</td>
-		        <td>courtmast3r</td>
-		        <td>#4</td>
 		        <td>#3</td>
 		        <td>169</td>
+		      </tr>
+		       <tr>
+		      	<td>Makonnen J</td>
+		        <td>makonnenj</td>
+		        <td>#4</td>
+		        <td>#2</td>
+		        <td>174</td>
 		      </tr>
 		</tbody>
   		</table>
@@ -209,6 +163,18 @@
 		</table>	
 		<br>
 		<br>
+		<br>
+		<br>
+	<div class="col-md-4">
+		<div class="thumbnail">
+        	<a href="index.html" target="_blank">
+	          	<img src="images/kd_beasley.jpg" alt="Kevin Durant vs. Micheal Beasley" style="width:550px;height:250px;">
+	          	<div class="caption">
+	           		<Center><p>KD vs. Micheal Beasley</p></Center>
+	          	</div>
+	        </a>
+	    </div>
+	</div>
 		<br>
 		<br> 
 		<!--Second Image-->
@@ -225,6 +191,24 @@
 	</div>
 		<br>
 	    <br>
+	    <!--Third Image-->
+		<div class="col-md-4">
+			<div class="thumbnail">
+	        	<a href="index.html" target="_blank">
+		        	<img src="images/kd_beasley2.jpg" alt="Kevin Durant vs. Micheal Beasley" style="width:550px;height:250px;padding-right:0px;">
+		          	<div class="caption">
+		           		<Center><p>Kemba</p></Center>
+		          	</div>
+		        </a>
+		    </div>
+		</div>
+	</div>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+        <br>
 	    <br>
 	    <br>
 	    <br>
@@ -242,18 +226,13 @@
         <br>
 		<div class="footer">
 	<nav class="navbar-inverse">
-  		<li role="presentation" class="status"><a href="#">About K.O.C.- NYC</a><left></li>
-  		<li role="presentation" class="status"><a href="#">Developers</a><right></li>
-  		<li role="presentation" class="status"><a href="#">Privacy</a><right></li>
-  		<li role="presentation" class="status"><a href="#">Help</a><right></li>
-  		<li role="presentation" class="status"><a href="#">Contact Us</a><right></li>
-  		<li role="presentation" class="status"><a href="#">Donations</a><right></li>
+  	  <li role="presentation" class="status"><a href="#"><b>About K.O.C.- NYC</b></a><left></li>
+      <li role="presentation" class="status"><a href="#"><b>Developers</b></a><right></li>
+      <li role="presentation" class="status"><a href="#"><b>Privacy</b></a><right></b></li>
+      <li role="presentation" class="status"><a href="#"><b>Help</b></a><right></li>
+      <li role="presentation" class="status"><a href="#"><b>Contact Us</b></a><right></li>
+      <li role="presentation" class="status"><a href="#"><b>Donations</b></a><right></li>
   	</nav>
   	</div>
-
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 </body>
 </html>
