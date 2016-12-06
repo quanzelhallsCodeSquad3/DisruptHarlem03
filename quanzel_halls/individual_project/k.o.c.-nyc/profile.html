@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <title>K.O.C.-NYC/courtmast3rQ/profile</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-navbar-inverse {
+    navbar-inverse {
       color: orange;
     }
     .navbar-inverse .navbar-nav>li>a {
@@ -26,20 +29,20 @@ navbar-inverse {
       color: orange;
     }
 
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;
-color: orange;
-}
-h2 {
-  color: black !important;
-}
-p{
-  color: orange;
-}
-.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
-  background-color: black !important;
-}
- .footer {
-    height: 4em;
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;
+    color: orange;
+    }
+    h2 {
+      color: black !important;
+    }
+    p{
+      color: orange;
+    }
+    .w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+      background-color: black !important;
+    }
+    .footer {
+      height: 4em;
       list-style-type: none;
       display: inline;
       margin: 0;
@@ -47,11 +50,11 @@ p{
       margin-top: 80px;
     }
     .status {
-    display: inline;
-    padding: 70px; 
-    padding-bottom: 0px;
+      display: inline;
+      padding: 70px; 
+      padding-bottom: 0px;
     } 
-     
+
 </style>
 <body class="w3-orange">
 
@@ -106,9 +109,11 @@ p{
       <div class="w3-light-grey w3-text-grey w3-card-4">
         <div class="w3-display-container">
           <img src="images/profile_pic.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
+          <div class="profilename">
+          <div class="w3-display-topleft w3-container w3-text-black">
             <h2>Quanzel H</h2>
           </div>
+        </div>
         </div>
         <div class="w3-container">
           <p><i class="fa fa-user-circle-o fa-fw w3-margin-right w3-large w3-text-teal"></i>courtmast3rQ</p>
@@ -174,10 +179,10 @@ p{
     <div class="w3-twothird">
     
       <div class="w3-container w3-card-2 w3-light-grey w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-heartbeat fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Activity</h2>
+        <h2 class="w3-text-orange w3-padding-16"><i class="fa fa-heartbeat fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Activity</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Harlem</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Rucker Park   <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <h6 class="w3-text-teal"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Rucker Park   <span class="w3-tag w3-teal w3-round">Current Location</span></h6>
           <p>3 on 3 (Score: 9-7) ... @courtmast3rQ, @balliswife300, @darylh vs .....</p>
           <p>1 on 1 (Score: 6-5) ... @uncledrew vs @chefcurry30</p>
           <p>@damedollaz$$ Called Next!</p>
@@ -186,7 +191,33 @@ p{
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Bronx</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-location-arrow fa-fw w3-margin-right"></i>Gauchos Gym</h6>
-          <p> ..... </p>
+          <div class="container">
+                <div class="container">
+    <div class="row">    
+        <div class="col-xs-8 col-xs-offset-2">
+        <div class="input-group">
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      <span id="search_concept">Filter by miles</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains">1-5</a></li>
+                      <li><a href="#its_equal">6-10</a></li>
+                      <li><a href="#greather_than">11-15></a></li>
+                      <li><a href="#less_than">16-20</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#all">Entire Bronx</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="Search term...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+        </div>
+  </div>
+</div>
           <hr>
         </div>
         <div class="w3-container">
@@ -194,15 +225,60 @@ p{
           <h6 class="w3-text-teal"><i class="fa fa-location-arrow fa-fw w3-margin-right"></i>Brooklyn Pier</h6>
           <p> ..... </p><br>
         </div>
+        <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      <span id="search_concept">Filter by miles</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains">1-5</a></li>
+                      <li><a href="#its_equal">6-10</a></li>
+                      <li><a href="#greather_than">11-15></a></li>
+                      <li><a href="#less_than">16-20</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#all">Entire Brooklyn</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="Search term...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+        </div>
+  </div>
+</div>
+         <hr>
       <div class="w3-container">
           <h5 class="w3-opacity"><b>Queens</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-location-arrow fa-fw w3-margin-right"></i>Queens Valley Playground</h6>
           <p> ..... </p><br>
         </div>
       </div>
+      <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      <span id="search_concept">Filter by miles</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains">1-5</a></li>
+                      <li><a href="#its_equal">6-10</a></li>
+                      <li><a href="#greather_than">11-15></a></li>
+                      <li><a href="#less_than">16-20</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#all">Entire Queens</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="Search term...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+        </div>
+  </div>
+</div>
 
       <div class="w3-container w3-card-2 w3-light-grey">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-users fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Friends</h2>
+        <h2 class="w3-text-orange w3-padding-16"><i class="fa fa-users fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Friends</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Daryl H</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-user-circle-o fa-fw w3-margin-right"></i>darylh</h6>
